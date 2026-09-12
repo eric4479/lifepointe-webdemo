@@ -8,3 +8,5 @@ Thumbs.db
 *.swo
 .env
 .env.local
+.wrangler/
+_tmp_token.py
