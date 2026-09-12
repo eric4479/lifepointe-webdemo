@@ -1,0 +1,42 @@
+{
+  "name": "LifePointe Ministries",
+  "tagline": "Love in Action",
+  "shortDescription": "A church in Titusville, FL, dedicated to sharing the love of Christ through worship, community outreach, and practical service.",
+  "address": {
+    "street": "4220 S. Hopkins Ave.",
+    "city": "Titusville",
+    "state": "FL",
+    "zip": "32780",
+    "full": "4220 S. Hopkins Ave., Titusville, FL 32780"
+  },
+  "phone": "321-383-0254",
+  "email": "lifepointeministries@gmail.com",
+  "serviceTimes": {
+    "sunday": {
+      "doorsOpen": "10:00 AM",
+      "serviceStart": "10:30 AM",
+      "label": "Sunday Worship"
+    }
+  },
+  "location": {
+    "name": "Titusville Civic Center",
+    "description": "Home to LifePointe Ministries, the Titusville Civic Center serves as a gathering place for worship, community events, outreach programs, and private rentals."
+  },
+  "outreach": {
+    "name": "CREW 29 Outreach",
+    "description": "CREW 29 is the outreach ministry of LifePointe Ministries, providing meals, clothing, hygiene items, fellowship, and hope to our neighbors in need. Volunteers are always welcome to join us in making a difference."
+  },
+  "pastor": {
+    "name": "Pastor Royce \"Scooter\" Morrison",
+    "bio": "Pastor Royce \"Scooter\" Morrison was born in Dothan, Alabama, and raised in Titusville, Florida, giving him deep, lasting roots in the community he serves. His passion is helping people know Jesus while serving the Titusville community with compassion, hope and practical ministry.",
+    "roots": "Born in Dothan, Alabama; raised in Titusville, Florida"
+  },
+  "giving": {
+    "onlineUrl": "https://lifepointe.breezechms.com/give/online",
+    "note": "Thank you for your financial support. We could not serve and love the community without your faithful support."
+  },
+  "social": {
+    "placeholders": true,
+    "note": "Add real Facebook/Instagram/YouTube links when verified."
+  }
+}
