@@ -72,4 +72,20 @@
     var year = new Date().getFullYear();
     spans.forEach(function (el) { el.textContent = year; });
   })();
+
+  /* --- Scroll reveal for [data-animate] elements --- */
+  (function () {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var elements = document.querySelectorAll("[data-animate]");
+    if (!elements.length) return;
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    elements.forEach(function (el) { observer.observe(el); });
+  })();
 })();

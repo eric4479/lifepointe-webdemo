@@ -360,3 +360,12 @@ button { font: inherit; cursor: pointer; }
   display: flex; align-items: center; justify-content: center;
   font-size: .8rem; text-align: center;
 }
+
+/* --- Scroll reveal (JS adds .visible on intersection) --- */
+[data-animate] {
+  opacity: 0; transform: translateY(18px); transition: opacity .5s ease, transform .5s ease;
+}
+[data-animate].visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  [data-animate], [data-animate].visible { opacity: 1; transform: none; transition: none; }
+}
