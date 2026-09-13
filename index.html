@@ -42,7 +42,7 @@
     }
     .site-header { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid #e5e7eb; }
     .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; }
-    .brand img { height: 40px; width: auto; }
+    .brand img { height: 80px; width: auto; display: block; }
     .nav { display: none; }
     .nav-list { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
     .nav-link { color: #111827; font-weight: 500; padding: .5rem 1rem; border-radius: 6px; text-decoration: none; }
@@ -175,8 +175,8 @@
 
     <!-- === CINEMATIC HERO === -->
     <section class="hero hero--cinematic">
-      <video class="hero__video" autoplay muted loop playsinline preload="none" aria-label="Cinematic background video of calm lake with mountains" poster="/images/hero-poster.jpg">
-        <source data-src="/videos/hero-video-small.mp4" type="video/mp4" media="(min-width: 768px)">
+      <video class="hero__video" autoplay muted loop playsinline preload="metadata" aria-label="Cinematic background video of calm lake with mountains" poster="/images/hero-poster.jpg">
+        <source src="/videos/hero-video-small.mp4" type="video/mp4">
       </video>
       <div class="hero__poster" aria-hidden="true"></div>
       <div class="hero__overlay" aria-hidden="true"></div>

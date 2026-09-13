@@ -359,7 +359,7 @@ button {
   opacity: .9;
   letter-spacing: .1em;
   text-transform: uppercase;
-  color: var(--color-brand-green);
+  color: var(--color-brand-blue);
 }
 
 .hero__title {
@@ -513,7 +513,7 @@ button {
 }
 
 .hero--text .hero__tagline {
-  color: var(--color-brand-green);
+  color: var(--color-brand-blue);
 }
 
 /* ================================================================
@@ -657,7 +657,7 @@ button {
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--color-brand-green);
+  color: var(--color-brand-blue);
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.4;
@@ -711,7 +711,11 @@ button {
 
 .footer-brand { display: flex; flex-direction: column; gap: .6rem; }
 
-.footer-brand img { height: 36px; width: auto; }
+.brand img {
+  height: 80px;
+  width: auto;
+  display: block;
+}
 
 .footer-brand p { margin: 0; opacity: .9; }
 
