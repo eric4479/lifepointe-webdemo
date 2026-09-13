@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Give — LifePointe Ministries</title>
+  <meta name="description" content="Support LifePointe Ministries — Love in Action. Give online via Tithely/Breeze, by mail, in person, or donate goods. Tax-deductible.">
+  <meta name="theme-color" content="#4A5568">
+  <meta property="og:title" content="Give — LifePointe Ministries">
+  <meta property="og:description" content="Love in Action. Support worship, CREW 29 outreach, and practical service in Titusville, FL.">
+  <meta property="og:image" content="https://lifepointe-webdemo.pages.dev/images/og-give.svg">
+  <meta property="og:url" content="https://lifepointe-webdemo.pages.dev/give.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    window.LIFEPOINTE = {
+      name: "LifePointe Ministries", tagline: "Love in Action",
+      address: "4220 S. Hopkins Ave., Titusville, FL 32780",
+      phone: "321-383-0254", email: "lifepointeministries@gmail.com",
+      givingUrl: "https://lifepointe.breezechms.com/give/online",
+      serviceTime: "Sunday 10:00 AM (doors) / 10:30 AM (service)",
+      location: "Titusville Civic Center", logo: "/images/logo.svg"
+    };
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Church",
+    "name": "LifePointe Ministries",
+    "description": "Give to LifePointe Ministries — worship, CREW 29 outreach, and practical service in Titusville, FL.",
+    "url": "https://lifepointe-webdemo.pages.dev/give.html",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4220 S. Hopkins Ave.",
+      "addressLocality": "Titusville", "addressRegion": "FL", "postalCode": "32780"
+    }
+  }
+  </script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all'">
+  <script src="/js/main.js" defer></script>
+</head>
+<body class="page-give">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="LifePointe Ministries home">
+        <img src="/images/logo-white.svg" alt="LifePointe Ministries" width="160" height="40" loading="eager" fetchpriority="high">
+      </a>
+      <nav id="primaryNav" class="nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="crew29.html" class="nav-link">CREW 29</a></li>
+          <li><a href="serve.html" class="nav-link">Serve</a></li>
+          <li class="nav-item-donate"><a href="give.html" class="btn btn--primary">Give Online</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero--text" style="min-height: 45vh; padding: var(--space-5) 0;">
+      <div class="container">
+        <div style="max-width: 32rem;">
+          <p class="eyebrow">Support the ministry</p>
+          <h1 style="font-family: var(--font-head); font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 .6rem; color: var(--color-primary-dark);">Give</h1>
+          <p class="hero__tagline" style="font-size: 1.3rem; color: var(--color-accent);">Thank you for your faithful generosity</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width: 42rem; margin: 0 auto;">
+        <p class="lead-text text-center" style="margin: 0 auto;">Your generosity makes the work possible — worship, CREW 29 Outreach, community meals, clothing assistance, holiday events, and practical help for neighbors in need.</p>
+      </div>
+    </section>
+
+    <!-- Online giving -->
+    <section class="section section--alt-bg">
+      <div class="container" style="max-width: 36rem; margin: 0 auto; text-align: center;">
+        <h2>Give online</h2>
+        <p style="color: var(--color-muted);">
+          Secure online giving through Tithely (Breeze ChMS) — one-time or recurring.
+        </p>
+
+        <!-- Primary donate button -->
+        <a href="https://lifepointe.breezechms.com/give/online" target="_blank" rel="noopener"
+           class="btn btn--primary btn--lg">
+          Give online now →
+        </a>
+
+        <!-- QR code for mobile giving -->
+        <div style="margin-top: var(--space-3);">
+          <p class="small muted">Scan to give on your phone</p>
+          <div class="placeholder-img" style="width: 140px; height: 140px; margin: 0 auto; border: 2px dashed var(--color-border); border-radius: var(--radius-sm);">
+            [QR placeholder]
+          </div>
+          <p class="muted small" style="margin-top: .5rem; font-size: .8rem;">
+            [TODO: generate QR from https://lifepointe.breezechms.com/give/online]
+          </p>
+        </div>
+
+        <p class="form-note small muted" style="margin-top: var(--space-2);">
+          Opens the Tithely / Breeze giving page in a new tab.
+        </p>
+      </div>
+    </section>
+
+    <!-- Offline giving -->
+    <section class="section">
+      <div class="container" style="max-width: 42rem; margin: 0 auto;">
+        <h2 style="text-align: center;">Give another way</h2>
+        <p style="text-align: center; color: var(--color-muted);">Not comfortable online? You can still give in person or by mail.</p>
+
+        <div class="card-grid card-grid--3">
+          <div class="card card--elevated">
+            <h3>In person</h3>
+            <p>Give during Sunday service. A team member can help set up recurring giving.</p>
+            <p class="small"><strong>Sunday:</strong> 10:00 AM doors / 10:30 AM service</p>
+          </div>
+          <div class="card card--elevated">
+            <h3>By mail</h3>
+            <p>LifePointe Ministries<br>4220 S. Hopkins Ave.<br>Titusville, FL 32780</p>
+            <p class="muted small">Make checks payable to LifePointe Ministries. Note "designation" if you'd like to direct your gift.</p>
+          </div>
+          <div class="card card--elevated">
+            <h3>Donate goods</h3>
+            <p>CREW 29 needs clothing, hygiene items, and non-perishable food. Contact us to coordinate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Giving explanation -->
+    <section class="section section--alt-bg">
+      <div class="container" style="max-width: 42rem; margin: 0 auto;">
+        <h2 style="text-align: center;">Where your gift goes</h2>
+        <ul class="checkmark-list">
+          <li>Sunday worship and ministry at the Titusville Civic Center</li>
+          <li>CREW 29 Outreach — meals, clothing, hygiene items, and fellowship</li>
+          <li>Community meals and holiday events</li>
+          <li>Volunteer support and ministry partnerships</li>
+        </ul>
+        <div class="btn-group" style="margin-top: var(--space-2);">
+          <a href="https://lifepointe.breezechms.com/give/online" target="_blank" rel="noopener" class="btn btn--primary">Give online now →</a>
+          <a href="crew29.html" class="btn btn--outline">Support CREW 29 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Questions form -->
+    <section class="section">
+      <div class="container" style="max-width: 42rem; margin: 0 auto;">
+        <h2 style="text-align: center;">Questions about giving?</h2>
+        <form class="form" action="mailto:lifepointeministries@gmail.com" method="post" enctype="text/plain" style="margin-top: var(--space-3);">
+          <p class="form-note small">Demo form — sends an email draft. Replace with a real handler before publishing.</p>
+          <div class="form-group"><input type="text" name="name" placeholder="Your name" required></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Email" required></div>
+          <div class="form-group"><textarea name="message" placeholder="I'd like to talk about giving, set up recurring gifts, or designate a gift…" rows="4"></textarea></div>
+          <button type="submit" class="btn btn--primary" style="width:100%;">Send message →</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="/images/logo-white.svg" alt="LifePointe Ministries" width="140" height="40" loading="lazy"><p class="muted">Love in Action. Serving Titusville, FL.</p></div>
+        <div class="footer-col">
+          <h3 class="small">Quick Links</h3>
+          <ul class="footer-nav"><li><a href="about.html">About</a></li><li><a href="crew29.html">CREW 29</a></li><li><a href="serve.html">Serve</a></li><li><a href="give.html">Give</a></li><li><a href="visit.html">Plan a Visit</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="small">Giving</h3>
+          <p class="muted">Titusville Civic Center<br>4220 S. Hopkins Ave.<br>Titusville, FL 32780</p>
+          <p class="muted"><a href="tel:3213830254">321-383-0254</a></p>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <p class="footer-copy muted">&copy; <span id="currentYear"></span> LifePointe Ministries • Built with ❤️ for the Titusville community</p>
+    </div>
+  </footer>
+</body>
+</html>

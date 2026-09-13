@@ -1,0 +1,33 @@
+# Auto-convert text files to have LF endings, keep binary files as-is
+# See https://www.git-scm.com/book/en/v2/Customizing-Git-Customizing-This-Configuration
+* text=auto eol=lf
+
+# Binary / generated files
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.mp4  binary
+*.mov  binary
+*.webp binary
+*.woff   binary
+*.woff2  binary
+*.ttf   binary
+*.eot   binary
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node / tooling
+node_modules/
+.cache/
+*.log
+
+# Temp / scratch
+*.tmp
+*~
+
+# Secrets
+.env
+.env.local

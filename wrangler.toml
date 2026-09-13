@@ -1,0 +1,30 @@
+account_id = "7e551880aa7a915a78c9b0887630b621"
+name = "lifepointe-webdemo"
+compatibility_date = "2026-09-01"
+
+[vars]
+  LIFEPOINTE_SITE = "https://lifepointe-webdemo.pages.dev"
+
+[env.production]
+  # Production branch = main
+  branches = ["main"]
+
+[env.preview]
+  # Any other branch gets a preview URL
+  branches = ["*"]
+
+[build]
+  # No build step needed — static files served from repo root
+  # Pages auto-detects static sites (no _build/ output_dir needed)
+  # but we set it explicitly per docs:
+  # https://developers.cloudflare.com/pages/platform/build-configuration/
+  command = ""
+  cwd = "."
+  [build.upload]
+    # For "Direct Upload" from wrangler
+    # (not needed when using GitHub integration)
+    format = "directory"
+
+# Static assets configuration (no bundler — pure static)
+# For production deploys via GitHub integration, remove [build] block
+# and let Pages auto-detect the static site.

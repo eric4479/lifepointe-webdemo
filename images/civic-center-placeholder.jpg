@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#4A5568" rx="14"/>
+  <rect x="80" y="80" width="1040" height="470" rx="10" fill="#2D3748" stroke="#4A5568" stroke-width="1"/>
+  <text x="600" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="28" font-weight="600" fill="#CBD5E0">Titusville Civic Center</text>
+  <text x="600" y="365" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" fill="#A0AEC0">4220 S. Hopkins Ave, Titusville, FL 32780</text>
+  <text x="600" y="540" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#718096">[Add real photo with permission]</text>
+</svg>

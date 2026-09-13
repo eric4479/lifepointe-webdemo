@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serve — LifePointe Ministries</title>
+  <meta name="description" content="Volunteer with LifePointe Ministries. Serve with CREW 29 Outreach, Sunday hospitality, community meals, and more. Everyone has a place.">
+  <meta name="theme-color" content="#4A5568">
+  <meta property="og:title" content="Serve — LifePointe Ministries">
+  <meta property="og:description" content="Volunteer with CREW 29, Sunday hospitality, community meals, and behind-the-scenes service.">
+  <meta property="og:image" content="https://lifepointe-webdemo.pages.dev/images/og-serve.svg">
+  <meta property="og:url" content="https://lifepointe-webdemo.pages.dev/serve.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    window.LIFEPOINTE = {
+      name: "LifePointe Ministries", tagline: "Love in Action",
+      address: "4220 S. Hopkins Ave., Titusville, FL 32780",
+      phone: "321-383-0254", email: "lifepointeministries@gmail.com",
+      givingUrl: "https://lifepointe.breezechms.com/give/online",
+      serviceTime: "Sunday 10:00 AM (doors) / 10:30 AM (service)",
+      location: "Titusville Civic Center", logo: "/images/logo.svg"
+    };
+  </script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all'">
+  <script src="/js/main.js" defer></script>
+</head>
+<body class="page-serve">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="LifePointe Ministries home">
+        <img src="/images/logo-white.svg" alt="LifePointe Ministries" width="160" height="40" loading="eager" fetchpriority="high">
+      </a>
+      <nav id="primaryNav" class="nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="crew29.html" class="nav-link">CREW 29</a></li>
+          <li><a href="serve.html" class="nav-link active">Serve</a></li>
+          <li class="nav-item-donate"><a href="give.html" class="btn btn--primary">Give Online</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero--text" style="min-height: 45vh; padding: var(--space-5) 0;">
+      <div class="container">
+        <div style="max-width: 32rem;">
+          <p class="eyebrow">Volunteer</p>
+          <h1 style="font-family: var(--font-head); font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 .6rem; color: var(--color-primary-dark);">Get involved</h1>
+          <p class="hero__tagline" style="font-size: 1.3rem; color: var(--color-accent);">Your skills. Your time. Your place.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width: 42rem; margin: 0 auto; text-align: center;">
+        <p class="muted">Volunteers make this ministry possible. Whether you can give an hour, a day, or build it into your routine — there's a place for you.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt-bg">
+      <div class="container">
+        <h2 style="text-align: center;">Ways to serve</h2>
+        <div class="card-grid card-grid--3">
+          <div class="card card--elevated"><h3><a href="crew29.html">CREW 29 Outreach</a></h3><p>Deliver meals, clothing, and hygiene items to neighbors in need.</p></div>
+          <div class="card card--elevated"><h3>Sunday hospitality</h3><p>Welcome people, help things run smoothly, make guests feel at home.</p></div>
+          <div class="card card--elevated"><h3>Community meals</h3><p>Help prepare, serve, or clean up for community meals and holiday events.</p></div>
+          <div class="card card--elevated"><h3>Behind the scenes</h3><p>Sorting donations, organizing supplies, logistics, setup, teardown.</p></div>
+          <div class="card card--elevated"><h3>Prayer & encouragement</h3><p>Show up, listen, and remind people they're not alone.</p></div>
+          <div class="card card--elevated"><h3>Skills-based help</h3><p>Fix things, graphics, writing, driving, cooking — let us know.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width: 42rem; margin: 0 auto;">
+        <h2 style="text-align: center;">Tell us how you'd like to serve</h2>
+        <form class="form" action="mailto:lifepointeministries@gmail.com" method="post" enctype="text/plain" style="margin-top: var(--space-3);">
+          <p class="form-note small">Demo form — sends an email draft. Replace with Formspree or ChurchCMS before publishing.</p>
+          <div class="form-group"><input type="text" name="name" placeholder="Your name" required></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Email" required></div>
+          <div class="form-group"><input type="tel" name="phone" placeholder="Phone (optional)"></div>
+          <div class="form-group">
+            <select name="interest" style="width:100%;padding:.6rem;border:1px solid var(--color-border);border-radius:var(--radius-sm);">
+              <option>Select one…</option>
+              <option>CREW 29 Outreach</option>
+              <option>Sunday hospitality</option>
+              <option>Community meals</option>
+              <option>Behind the scenes</option>
+              <option>Prayer & encouragement</option>
+              <option>Skills-based help</option>
+              <option>Not sure yet — tell me more</option>
+            </select>
+          </div>
+          <div class="form-group"><textarea name="availability" placeholder="When are you available?" rows="3"></textarea></div>
+          <div class="form-group"><textarea name="message" placeholder="Questions, anything else?" rows="3"></textarea></div>
+          <button type="submit" class="btn btn--primary" style="width:100%;">Send my interest →</button>
+        </form>
+
+        <!-- QR Code -->
+        <div style="margin-top: var(--space-4); text-align: center;">
+          <p class="small muted">QR code for quick volunteer sign-up</p>
+          <div class="placeholder-img" style="width: 140px; height: 140px; margin: 0 auto; border: 2px dashed var(--color-border); border-radius: var(--radius-sm);">[QR placeholder]</div>
+          <p class="muted small">[TODO: generate QR linking to this form]</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="/images/logo-white.svg" alt="LifePointe Ministries" width="140" height="40" loading="lazy"><p class="muted">Love in Action. Serving Titusville, FL.</p></div>
+        <div class="footer-col">
+          <h3 class="small">Quick Links</h3>
+          <ul class="footer-nav"><li><a href="about.html">About</a></li><li><a href="crew29.html">CREW 29</a></li><li><a href="serve.html">Serve</a></li><li><a href="give.html">Give</a></li><li><a href="visit.html">Plan a Visit</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="small">Connect</h3>
+          <p class="muted"><a href="tel:3213830254">321-383-0254</a></p>
+          <p class="muted"><a href="mailto:lifepointeministries@gmail.com">lifepointeministries@gmail.com</a></p>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <p class="footer-copy muted">&copy; <span id="currentYear"></span> LifePointe Ministries • Built with ❤️ for the Titusville community</p>
+    </div>
+  </footer>
+</body>
+</html>

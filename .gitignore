@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# Build artifacts
+.cache/
+node_modules/
+*.tmp
+*~
+
+# Env / secrets
+.env
+.env.local
+
+# Analytics (if added later)
+.ga/

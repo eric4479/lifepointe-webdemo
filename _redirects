@@ -1,0 +1,12 @@
+# Cache static assets for 1 year
+/css/*    31536000
+/js/*     31536000
+/images/* 31536000
+/videos/* 31536000
+
+# Redirect Wix-style paths (if any exist)
+# /about-1 -> /about.html
+# /about-5 -> /crew29.html
+
+# Force HTTPS + trailing slash normalization
+https://* lifepointeministries.org/*  301 https://lifepointeministries.org/:splat

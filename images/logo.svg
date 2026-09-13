@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="100" viewBox="0 0 400 100" role="img" aria-labelledby="lifepointe-title">
+  <title id="lifepointe-title">LifePointe Ministries</title>
+  <rect width="400" height="100" rx="12" fill="#4A5568"/>
+  <text x="50%" y="62" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" letter-spacing="2">
+    LIFE<span style="fill:#DD6B20">POINTE</span> MINISTRIES
+  </text>
+</svg>

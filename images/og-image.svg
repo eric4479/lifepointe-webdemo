@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="og-title">
+  <title id="og-title">LifePointe Ministries — Love in Action</title>
+  <!-- Charcoal background -->
+  <rect width="1200" height="630" x="0" y="0" fill="#4A5568"/>
+  
+  <!-- Subtle cross watermark -->
+  <rect x="595" y="40" width="10" height="550" fill="#DD6B20" opacity="0.15"/>
+  <rect x="420" y="260" width="360" height="10" fill="#DD6B20" opacity="0.15"/>
+  
+  <!-- Logo -->
+  <rect x="460" y="70" width="280" height="80" rx="14" fill="#1A202C"/>
+  <text x="600" y="122" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="700" fill="#DD6B20" letter-spacing="2">LIFE</text>
+  <text x="600" y="148" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" letter-spacing="2">POINTE MINISTRIES</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="220" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-style="italic" fill="#FFFFFF" opacity="0.92">Love in Action</text>
+  
+  <!-- Main description -->
+  <text x="600" y="300" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" fill="#FFFFFF" opacity="0.85" text-anchor="middle">
+    A church in Titusville, FL sharing the love of Christ
+  </text>
+  <text x="600" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" fill="#FFFFFF" opacity="0.85">
+    through worship, community outreach, and practical service.
+  </text>
+  
+  <!-- Service times -->
+  <rect x="200" y="380" width="800" height="80" rx="10" fill="#FFFFFF" opacity="0.1"/>
+  <text x="600" y="410" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#FFFFFF">Sunday Worship — Doors 10:00 AM &middot; Service 10:30 AM</text>
+  <text x="600" y="438" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#FFFFFF" opacity="0.8">Titusville Civic Center &middot; 4220 S. Hopkins Ave</text>
+  
+  <!-- Footer -->
+  <text x="600" y="590" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#FFFFFF" opacity="0.5">
+    lifepointeministries@gmail.com &middot; 321-383-0254
+  </text>
+</svg>

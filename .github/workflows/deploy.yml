@@ -1,0 +1,28 @@
+name: Deploy to Cloudflare Pages
+
+# Auto-deploys to lifepointe-webdemo.pages.dev on every push to main.
+# Requires a CLOUDFLARE_API_TOKEN secret on the GitHub repo.
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 7e551880aa7a915a78c9b0887630b621
+          projectName: lifepointe-webdemo
+          directory: .
+          branch: main
+          # gitHubToken: ${{ secrets.ACTIONS_DEPLOYMENT_TOKEN }}

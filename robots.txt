@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /_tmp/
+
+# Sitemaps
+Sitemap: https://lifepointe-webdemo.pages.dev/sitemap.xml
+
+# Crawl delay for well-behaved bots
+Crawl-delay: 5

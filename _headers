@@ -1,0 +1,17 @@
+# Cloudflare Pages — security & performance headers
+# https://developers.cloudflare.com/pages/platform/headers/
+
+# Cache static assets aggressively
+/css/*      Cache-Control: public, max-age=3153600, immutable
+/js/*       Cache-Control: public, max-age=3153600, immutable
+/images/*   Cache-Control: public, max-age=3153600, immutable
+/videos/*   Cache-Control: public, max-age=3153600, immutable
+/fonts/*    Cache-Control: public, max-age=3153600, immutable
+
+# Security headers
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), payment=self
+  X-XSS-Protection: 0
