@@ -1,6 +1,0 @@
-account_id = "7e551880aa7a915a78c9b0887630b621"
-
-[builds]
-  [builds.static_dir]
-    directory = "."
-    output_directory = "."
