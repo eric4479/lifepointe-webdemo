@@ -327,19 +327,16 @@ button {
   object-fit: cover;
   z-index: 0;
   opacity: .9;
-}
-
-/* Poster image (visible until video plays) */
-.hero__poster {
-  position: absolute;
-  inset: 0;
-  background: url('/images/hero-poster.jpg') center / cover no-repeat;
-  z-index: 0;
-  transition: opacity .4s ease;
+  transition: opacity .5s ease;
 }
 
 /* When video is playing, fade out poster */
-.hero__video.playing + .hero__poster { opacity: 0; }
+.hero__video.playing + .hero__poster,
+.hero__video.playing ~ .hero__poster { opacity: 0; }
+
+/* When video fails or is blocked, ensure poster is visible */
+.hero__video.fallback + .hero__poster,
+.hero__video.fallback ~ .hero__poster { opacity: 1; }
 
 /* Dark gradient overlay for text contrast (essential for WCAG) */
 .hero__overlay {

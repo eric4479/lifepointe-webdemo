@@ -108,6 +108,39 @@
     }, { once: true });
   })();
 
+  /* --- Force video autoplay on first user interaction if blocked --- */
+  (function () {
+    var video = document.querySelector(".hero__video");
+    if (!video) return;
+    // If video hasn't started playing after 2 seconds, try again on any user interaction
+    var tried = false;
+    setTimeout(function () {
+      if (!video.classList.contains("playing") && !tried) {
+        tried = true;
+        document.addEventListener("click", function playOnClick() {
+          if (video.paused && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            video.play().then(function () {
+              video.classList.add("playing");
+              var poster = document.querySelector(".hero__poster");
+              if (poster) { poster.style.opacity = "0"; }
+            }).catch(function () {});
+          }
+          document.removeEventListener("click", playOnClick);
+        }, { once: true });
+        document.addEventListener("keydown", function playOnKey() {
+          if (video.paused && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            video.play().then(function () {
+              video.classList.add("playing");
+              var poster = document.querySelector(".hero__poster");
+              if (poster) { poster.style.opacity = "0"; }
+            }).catch(function () {});
+          }
+          document.removeEventListener("keydown", playOnKey);
+        }, { once: true });
+      }
+    }, 2000);
+  })();
+
   /* --- Scroll reveal for [data-animate] elements --- */
   (function () {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
