@@ -21,7 +21,7 @@
       phone: "321-383-0254", email: "lifepointeministries@gmail.com",
       givingUrl: "https://lifepointe.breezechms.com/give/online",
       serviceTime: "Sunday 10:00 AM (doors) / 10:30 AM (service)",
-      location: "Titusville Civic Center", logo: "/images/logo.svg"
+      location: "Titusville Civic Center", logo: "/images/logo-header.png"
     };
   </script>
   <script type="application/ld+json">
@@ -64,12 +64,12 @@
   </header>
 
   <main id="main">
-    <section class="hero hero--text" style="min-height: 45vh; padding: var(--space-5) 0;">
+    <section class="hero hero--text" style="min-height: 45vh; padding: var(--space-xl) 0;">
       <div class="container">
         <div style="max-width: 32rem;">
           <p class="eyebrow">Support the ministry</p>
-          <h1 style="font-family: var(--font-head); font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 .6rem; color: var(--color-primary-dark);">Give</h1>
-          <p class="hero__tagline" style="font-size: 1.3rem; color: var(--color-accent);">Thank you for your faithful generosity</p>
+          <h1 style="font-family: var(--font-head); font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 .6rem; color: var(--color-text);">Give</h1>
+          <p class="hero__tagline" style="font-size: 1.3rem; color: var(--color-brand-green);">Thank you for your faithful generosity</p>
         </div>
       </div>
     </section>
@@ -97,11 +97,11 @@
         <!-- QR code for mobile giving -->
         <div style="margin-top: var(--space-3);">
           <p class="small muted">Scan to give on your phone</p>
-          <div class="placeholder-img" style="width: 140px; height: 140px; margin: 0 auto; border: 2px dashed var(--color-border); border-radius: var(--radius-sm);">
-            [QR placeholder]
+          <div style="display: flex; justify-content: center;">
+            <img src="/images/qr-give.jpg" alt="QR code to scan for online giving" width="140" height="140" style="border: 1px solid var(--color-border); border-radius: var(--radius-sm); box-shadow: 0 2px 6px rgba(0,0,0,.08);">
           </div>
           <p class="muted small" style="margin-top: .5rem; font-size: .8rem;">
-            [TODO: generate QR from https://lifepointe.breezechms.com/give/online]
+            Scans to https://lifepointe.breezechms.com/give/online
           </p>
         </div>
 

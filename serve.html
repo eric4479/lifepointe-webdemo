@@ -21,8 +21,41 @@
       phone: "321-383-0254", email: "lifepointeministries@gmail.com",
       givingUrl: "https://lifepointe.breezechms.com/give/online",
       serviceTime: "Sunday 10:00 AM (doors) / 10:30 AM (service)",
-      location: "Titusville Civic Center", logo: "/images/logo.svg"
+      location: "Titusville Civic Center", logo: "/images/logo-header.png"
     };
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Church",
+    "name": "LifePointe Ministries",
+    "url": "https://lifepointe-webdemo.pages.dev/serve.html",
+    "description": "Volunteer with LifePointe Ministries — serve with CREW 29, Sunday hospitality, community meals, and behind-the-scenes service.",
+    "logo": "https://lifepointe-webdemo.pages.dev/images/logo-header.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4220 S. Hopkins Ave.",
+      "addressLocality": "Titusville",
+      "addressRegion": "FL",
+      "postalCode": "32780"
+    },
+    "telephone": "321-383-0254",
+    "email": "lifepointeministries@gmail.com",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "10:00",
+        "closes": "12:00",
+        "description": "Sunday worship — doors 10:00 AM, service 10:30 AM"
+      }
+    ],
+    "department": {
+      "@type": "Organization",
+      "name": "CREW 29 Outreach",
+      "description": "Outreach ministry providing meals, clothing, hygiene items, fellowship, and hope."
+    }
+  }
   </script>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all'">
@@ -50,12 +83,12 @@
   </header>
 
   <main id="main">
-    <section class="hero hero--text" style="min-height: 45vh; padding: var(--space-5) 0;">
+    <section class="hero hero--text" style="min-height: 45vh; padding: var(--space-xl) 0;">
       <div class="container">
         <div style="max-width: 32rem;">
-          <p class="eyebrow">Volunteer</p>
-          <h1 style="font-family: var(--font-head); font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 .6rem; color: var(--color-primary-dark);">Get involved</h1>
-          <p class="hero__tagline" style="font-size: 1.3rem; color: var(--color-accent);">Your skills. Your time. Your place.</p>
+          <p class="eyebrow" style="color: var(--color-brand-blue);">Volunteer</p>
+          <h1 style="font-family: var(--font-head); font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 .6rem; color: var(--color-text);">Get involved</h1>
+          <p class="hero__tagline" style="font-size: 1.3rem; color: var(--color-brand-green);">Your skills. Your time. Your place.</p>
         </div>
       </div>
     </section>
@@ -108,8 +141,12 @@
         <!-- QR Code -->
         <div style="margin-top: var(--space-4); text-align: center;">
           <p class="small muted">QR code for quick volunteer sign-up</p>
-          <div class="placeholder-img" style="width: 140px; height: 140px; margin: 0 auto; border: 2px dashed var(--color-border); border-radius: var(--radius-sm);">[QR placeholder]</div>
-          <p class="muted small">[TODO: generate QR linking to this form]</p>
+          <div style="display: flex; justify-content: center;">
+            <img src="/images/qr-serve.jpg" alt="QR code to scan for volunteer sign-up" width="140" height="140" style="border: 1px solid var(--color-border); border-radius: var(--radius-sm); box-shadow: 0 2px 6px rgba(0,0,0,.08);">
+          </div>
+          <p class="muted small" style="margin-top: .5rem; font-size: .8rem;">
+            Scans to volunteer sign-up page
+          </p>
         </div>
       </div>
     </section>
