@@ -5,24 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LifePointe Ministries — Love in Action | Titusville, FL</title>
   <meta name="description" content="LifePointe Ministries: sharing the love of Christ through worship, community outreach, and practical service in Titusville, FL. Sunday worship at the Titusville Civic Center.">
-  <meta name="theme-color" content="#4A5568">
+  <meta name="theme-color" content="#003010">
+
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="LifePointe Ministries — Love in Action">
   <meta property="og:description" content="A church in Titusville, FL sharing the love of Christ through worship, outreach, and practical service. Sunday worship at the Titusville Civic Center.">
-  <meta property="og:image" content="https://lifepointe-webdemo.pages.dev/images/og-image.jpg">
+  <meta property="og:image" content="https://lifepointe-webdemo.pages.dev/images/hero-poster.jpg">
   <meta property="og:url" content="https://lifepointe-webdemo.pages.dev/">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Fonts (Google Fonts free) -->
+  <meta name="twitter:title" content="LifePointe Ministries — Love in Action">
+  <meta name="twitter:description" content="A church in Titusville, FL sharing the love of Christ through worship, outreach, and practical service.">
+  <meta name="twitter:image" content="https://lifepointe-webdemo.pages.dev/images/hero-poster.jpg">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://lifepointe-webdemo.pages.dev/">
+
+  <!-- Fonts (Google Fonts — free, licensed for web use) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon (SVG — scalable, brand-colored) -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <!-- Styles -->
-  <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Critical CSS inlined for fast first paint -->
+  <style>
+    /* Critical CSS — above the fold styles only */
+    :root {
+      --color-brand-blue: #1080C0;
+      --color-brand-blue-d: #0A5A94;
+      --color-brand-green: #60B040;
+      --color-crew-green: #003010;
+      --color-on-dark: #FFFFFF;
+    }
+    .site-header { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid #e5e7eb; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; }
+    .brand img { height: 40px; width: auto; }
+    .nav { display: none; }
+    .nav-list { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .nav-link { color: #111827; font-weight: 500; padding: .5rem 1rem; border-radius: 6px; text-decoration: none; }
+    .nav-link:hover { background: #f8fafb; color: #1080C0; }
+    .nav-link.active { background: #1080C0; color: #fff; font-weight: 600; }
+    .nav-item-donate .btn--primary { background: #1080C0; color: #fff; padding: .5rem 1rem; border-radius: 6px; font-weight: 600; font-size: .9rem; text-decoration: none; text-align: center; }
+    .nav-item-donate .btn--primary:hover { background: #0A5A94; color: #fff; }
+    .menu-toggle { display: flex; flex-direction: column; gap: 5px; width: 36px; height: 28px; background: none; border: none; cursor: pointer; padding: 0; margin-left: auto; }
+    .bar { width: 22px; height: 2.5px; background: #111827; border-radius: 2px; transition: transform .3s, opacity .3s; }
+    @media (min-width: 768px) { .nav { display: block; } .menu-toggle { display: none; } }
+    @media (max-width: 767px) {
+      .nav { display: none; position: absolute; top: 100%; right: 0; z-index: 49; }
+      .nav.open { display: block; background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 1rem; min-width: 240px; box-shadow: 0 12px 24px rgba(0,0,0,.12); margin-top: .5rem; }
+      .nav-list { flex-direction: column; align-items: stretch; gap: .3rem; }
+      .nav-link, .nav-item-donate .btn--primary { width: 100%; text-align: left; }
+    }
+    .menu-toggle[aria-expanded="true"] .bar:nth-child(1) { transform: rotate(45deg) translate(4px, 5px); }
+    .menu-toggle[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle[aria-expanded="true"] .bar:nth-child(3) { transform: rotate(-45deg) translate(5px, 3px); }
+  </style>
+
+  <!-- Full CSS (async load) -->
+  <link rel="preload" href="/css/style.css" as="style">
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
-  <!-- Site data (edit once, used everywhere) -->
+
+  <!-- Site config (editable in one place) -->
   <script>
     window.LIFEPOINTE = {
       name: "LifePointe Ministries",
@@ -33,19 +80,22 @@
       givingUrl: "https://lifepointe.breezechms.com/give/online",
       serviceTime: "Sunday 10:00 AM (doors) / 10:30 AM (service)",
       location: "Titusville Civic Center",
-      logo: "/images/logo.svg"
+      logo: "/images/logo-from-site.png",
+      logoDarkBg: "/images/logo-from-site.png"
     };
   </script>
-  <!-- Structured data (LocalBusiness / Church) -->
+
+  <!-- Structured data — Church (LocalBusiness) — helps SEO, Google knows this is a church -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Church",
     "name": "LifePointe Ministries",
-    "alternateName": "LifePointe",
+    "alternateName": ["LifePointe", "LifePointe Ministries"],
     "description": "A church in Titusville, FL dedicated to sharing the love of Christ through worship, community outreach, and practical service.",
     "url": "https://lifepointe-webdemo.pages.dev/",
-    "logo": "https://lifepointe-webdemo.pages.dev/images/logo.svg",
+    "logo": "https://lifepointe-webdemo.pages.dev/images/logo-from-site.png",
+    "image": "https://lifepointe-webdemo.pages.dev/images/hero-poster.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "4220 S. Hopkins Ave.",
@@ -54,24 +104,48 @@
       "postalCode": "32780",
       "addressCountry": "US"
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "321-383-0254",
-      "email": "lifepointeministries@gmail.com",
-      "contactType": "customer service"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "28.613889",
+      "longitude": "-80.807778"
     },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Sunday"],
-      "opens": "10:00",
-      "closes": "12:00"
-    },
+    "telephone": "321-383-0254",
+    "email": "lifepointeministries@gmail.com",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "10:00",
+        "closes": "12:00",
+        "description": "Sunday worship — doors 10:00 AM, service 10:30 AM"
+      }
+    ],
     "founder": {
       "@type": "Person",
       "name": "Pastor Royce Morrison"
+    },
+    "parentOrganization": {
+      "@type": "Place",
+      "name": "Titusville Civic Center",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4220 S. Hopkins Ave.",
+        "addressLocality": "Titusville",
+        "addressRegion": "FL",
+        "postalCode": "32780"
+      }
+    },
+    "department": {
+      "@type": "Organization",
+      "name": "CREW 29 Outreach",
+      "description": "Outreach ministry providing meals, clothing, hygiene items, fellowship, and hope."
     }
   }
   </script>
+
+  <!-- Preconnect to Google Fonts for faster font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body class="page-home">
 
@@ -80,7 +154,7 @@
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="LifePointe Ministries home">
-        <img src="/images/logo-white.svg" alt="LifePointe Ministries" class="brand-logo" width="160" height="40" loading="eager" fetchpriority="high">
+        <img src="/images/logo-from-site.png" alt="LifePointe Ministries logo — blue and green" width="188" height="188" loading="eager" fetchpriority="high">
       </a>
       <nav id="primaryNav" class="nav" role="navigation" aria-label="Main navigation">
         <ul class="nav-list">
@@ -88,7 +162,7 @@
           <li><a href="crew29.html" class="nav-link">CREW 29</a></li>
           <li><a href="serve.html" class="nav-link">Serve</a></li>
           <li class="nav-item-donate">
-            <a href="give.html" class="nav-link btn btn--secondary">Give Online</a>
+            <a href="give.html" class="btn--primary">Give Online</a>
           </li>
         </ul>
       </nav>
@@ -104,11 +178,11 @@
 
     <!-- === CINEMATIC HERO === -->
     <section class="hero hero--cinematic">
-      <video class="hero__video" autoplay muted loop playsinline preload="none" aria-hidden="true">
-        <source data-src="/videos/hero-drone.mp4" type="video/mp4" media="(min-width: 768px)">
+      <video class="hero__video" autoplay muted loop playsinline preload="none" aria-label="Cinematic background video of calm lake with mountains" poster="/images/hero-poster.jpg">
+        <source data-src="/videos/hero-video-small.mp4" type="video/mp4" media="(min-width: 768px)">
       </video>
-      <div class="hero__fallback" aria-hidden="true"></div>
-      <div class="hero__overlay"></div>
+      <div class="hero__poster" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
 
       <div class="hero__content container">
         <p class="hero__eyebrow" data-animate>Est. 2010 • Titusville, FL</p>
@@ -273,7 +347,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="/images/logo-white.svg" alt="LifePointe Ministries" width="140" height="40" loading="lazy">
+          <img src="/images/logo-from-site.png" alt="LifePointe Ministries logo" width="120" height="120" loading="lazy">
           <p class="muted">Love in Action.<br>Serving Titusville, FL with compassion and hope.</p>
         </div>
         <div class="footer-col">
